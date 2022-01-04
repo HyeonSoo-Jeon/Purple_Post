@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <Button
+        android:id="@+id/signUp_close_button"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/ic_close"
+        app:backgroundTint="#97000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:text="회원가입"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/loginbox_style"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/ic_email" />
+
+                <EditText
+                    android:id="@+id/sign_email"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:background="@null"
+                    android:hint="E-mail"
+                    android:inputType="text"
+                    android:textSize="17sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/written_email"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:background="@null"
+                    android:inputType="text"
+                    android:textSize="17sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/double_check"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/sign_up_button_style"
+                android:padding="0dp"
+                android:text="중복확인"
+                android:textSize="11sp"
+                android:visibility="visible"
+                app:backgroundTint="#7F5FB6" />
+
+            <TextView
+                android:id="@+id/email_check_finish"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/sign_up_button_style"
+                android:gravity="center"
+                android:text="확인"
+                android:textColor="#4CAF50"
+                android:textSize="15sp"
+                android:visibility="gone"
+                app:backgroundTint="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/loginbox_style"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/ic_lock" />
+
+            <EditText
+                android:id="@+id/sign_password"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/loginbox_style"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/ic_nickname" />
+
+            <EditText
+                android:id="@+id/sign_nickname"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:hint="Nickname"
+                android:inputType="text"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:text="회원 정보"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/loginbox_style"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/ic_person"
+                app:tint="#7A7A7A" />
+
+            <EditText
+                android:id="@+id/sign_name"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:hint="User name"
+                android:inputType="text"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/loginbox_style"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/ic_phone"
+                    app:tint="#7A7A7A" />
+
+                <EditText
+                    android:id="@+id/sign_phone"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:background="@null"
+                    android:hint="Phone Number"
+                    android:inputType="text"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/phone_auth"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/sign_up_button_style"
+                android:padding="0dp"
+                android:text="인증번호"
+                android:textSize="11sp"
+                android:visibility="visible"
+                app:backgroundTint="#7F5FB6" />
+
+            <TextView
+                android:id="@+id/phone_auth_sent"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/sign_up_button_style"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="전송됨"
+                android:textSize="11sp"
+                android:visibility="gone"
+                app:backgroundTint="#AAA9AA" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/phone_auth_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/loginbox_style"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/auth_number"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:background="@null"
+                    android:hint="인증번호 입력"
+                    android:inputType="text"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="3:00"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/phone_auth_check"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/sign_up_button_style"
+                android:padding="0dp"
+                android:text="확인"
+                android:textSize="11sp"
+                android:visibility="invisible"
+                app:backgroundTint="#7F5FB6" />
+
+            <TextView
+                android:id="@+id/phone_check_finish"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/sign_up_button_style"
+                android:gravity="center"
+                android:text="확인"
+                android:textColor="#4CAF50"
+                android:textSize="15sp"
+                android:visibility="gone"
+                app:backgroundTint="#FFFFFF" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sign_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="45dp"
+            android:text="Sign Up"
+            app:backgroundTint="#7F5FB6" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/signup_temp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:backgroundTint="#FFFFFF"
+        android:text="temp" />
+</FrameLayout>

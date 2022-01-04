@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "853902236014",
+    "project_id": "fir-project-5fe91",
+    "storage_bucket": "fir-project-5fe91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853902236014:android:cc8ccd07624a41d3d2c97f",
+        "android_client_info": {
+          "package_name": "com.cookandroid.youtubefirebaseprojectmy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853902236014-bu5oecm8j2nns95vtsg18jkkkcnv3tk6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQYZUzm6QNM3o1QGMktHExwm4j_B5AuDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853902236014-bu5oecm8j2nns95vtsg18jkkkcnv3tk6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
