@@ -23,8 +23,8 @@ All of Data is stored in the Firebase Storage.
 
 ### 2. Sign Up
 * Users make a ID using Email.
-> * Email is checked for non-duplication.
-> * If the user does not enter according to the e-mail format, membership registration will not proceed.
+> + Email is checked for non-duplication.  
+> + If the user does not enter according to the e-mail format, membership registration will not proceed.
 * User enters Password and Nickname
 > * When writing or commenting, a nickname, not a name, is used.
 * User enters a personal info
@@ -45,6 +45,6 @@ All of Data is stored in the Firebase Storage.
 * can see user's nickname
 * If press Writing button, move write post page
 * If press My Writing button, can see only post written by user
-* IF press Send Opinion button, cna sent email to ME!
+* IF press Send Opinion button, cna sent email to ME!🙋‍♂️🙋‍♂️
 * If press Log Out button, user is logged out
 * If user clicks the cancel membership button, the user's information is deleted from Firebase.
