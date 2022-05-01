@@ -19,7 +19,7 @@ All of Data is stored in the Firebase Storage.
 
 ### 1. Login
 * Users can login using Email and PW.
-* This app contains auto Login, so ㅐnce users log in, users do not need to log in again.
+* This app contains auto Login, so once users log in, users do not need to log in again.
 
 ### 2. Sign Up
 * Users make a ID using Email.
