@@ -6,7 +6,7 @@
 
 > ## 1. Summary
 * Developer : HyeonSoo Jeon  
-* Development : 20.04.19  
+* Development : 20.04.12 - 20.05.16  
 * Size : 5.16MB  
 * for <img alt="Android" src = "https://img.shields.io/badge/Android-3DDC84.svg?&style=flat&logo=android&logoColor=white"/>  
 
